@@ -22,7 +22,7 @@ function result() {
         case "-":
         resultado = resta(val1, val2);
             break;
-        case "*":
+        case "x":
         resultado = multiplicar(val1, val2);
             break;
         case "/":
