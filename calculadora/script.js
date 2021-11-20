@@ -14,12 +14,32 @@ function result() {
     const val2 = Number(documentoValor2);
     let resultado = 0;
 
-    if(operationInput === '+') {
+   /* if(operationInput === '+') {
         resultado = suma(val1, val2);
     } else if(operationInput === '-'){
-        resultado = resta(val1, val2);
+        resultado = resta(val1, val2); 
     }
+    */
+   switch(operationInput){
+       case "+":
+        resultado = suma(val1, val2);
+           break;
+        case "-":
+        resultado = resta(val1, val2);
+            break;
+        case "*":
+        resultado = multiplicar(val1, val2);
+            break;
+        case "/":
+            if(val1, val2 == 0){
+            resultado = "¡operación no válida!";
+            }
+            else
+        
+        resultado = dividir(val1, val2);
+            break;
 
+   }
     document.getElementById("result").textContent = resultado;
 
 }
@@ -30,6 +50,12 @@ function suma(value1, value2) {
 
 function resta(value1, value2) {
     return value1 - value2;
+}
+function multiplicar(val1, val2){
+    return val1 * val2;
+}
+function dividir(val1, val2){
+    return val1 / val2;
 }
 
 function operation(oper) {
