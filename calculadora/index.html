@@ -6,11 +6,11 @@
 	<meta charset="UTF-8" />
 </head>
 
-<body>
+<body onload="pageLoaded()">
 	<h1>Calculadora</h1>
 	<form action="#">
         <label>Primer valor</label>
-        <input type="number" id="valor1" value="0" min="0" max="1000"><br>
+        <input type="number" id="valor1" value="0" min="0" max="1000" onclick="limpiarInputValor1()"><br>
         <input type="text" id="oper" disabled>
         <button onclick="operation('+')">+</button>
         <button onclick="operation('-')">-</button>
@@ -21,7 +21,7 @@
         <input type="number" id="valor2" value="0" min="0" max="1000"><br><br>
         <input type="submit" value="Resultado" onclick="result()">
     </form>
-    <h2>Resultado: </h2><p id="result"></p>
+    <h2>Resultado: <span id="result"></span></h2>
 	<!--<script src="src/index.js">
 	</script>-->
     <script src="script.js"></script>

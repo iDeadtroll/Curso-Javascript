@@ -1,9 +1,11 @@
-/*
-// console.log(val1 + val2);
-// console.log(val1 - val2);
-// console.log(val1 * val2);
-// console.log(val1 / val2);
-*/
+/**
+ * Ejercicio:
+ * hacer que al dar click sobre el campo que se va a escribir se limpies su contenido.
+ * Todo reutiliando en una sola función.
+ */
+function pageLoaded() {
+    console.log("página cargada");
+}
 
 function result() {
     const documentoValor1 = document.getElementById("valor1").value;
@@ -13,6 +15,11 @@ function result() {
     const val1 = Number(documentoValor1);
     const val2 = Number(documentoValor2);
     let resultado = 0;
+
+    if(operationInput === "") {
+        alert("Elija una operación");
+        return true;
+    }
 
 
    switch(operationInput){
@@ -54,4 +61,8 @@ function dividir(val1, val2){
 function operation(oper) {
     let caja = document.getElementById("oper");
     caja.value=oper;
+}
+
+function limpiarInputValor1() {
+    document.getElementById("valor1").value = "";
 }
