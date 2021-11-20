@@ -11,9 +11,15 @@
 	<form action="#">
         <label>Primer valor</label>
         <input type="number" id="valor1" value="0" min="0" max="1000"><br>
+        <input type="text" id="oper" disabled>
+        <button onclick="operation('+')">+</button>
+        <button onclick="operation('-')">-</button>
+        <button onclick="operation('x')">x</button>
+        <button onclick="operation('/')">/</button>
+        <br>
         <label>Segundo valor</label>
         <input type="number" id="valor2" value="0" min="0" max="1000"><br><br>
-        <input type="submit" value="pepitp" onclick="myFuncion(9)">
+        <input type="submit" value="Resultdo" onclick="result()">
     </form>
     <p id="result">resultado: </p>
 	<!--<script src="src/index.js">

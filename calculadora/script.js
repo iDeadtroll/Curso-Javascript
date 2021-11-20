@@ -1,24 +1,26 @@
-var val1 = 0;
-var val2 = 0;
 /*
 // console.log(val1 + val2);
 // console.log(val1 - val2);
 // console.log(val1 * val2);
 // console.log(val1 / val2);
 */
-function myFuncion() {
-    var documentoValor1 = document.getElementById("valor1").value;
-    var documentoValor2 = document.getElementById("valor2").value;
-    console.log(documentoValor1);
-    console.log(documentoValor2);
 
-    val1 = Number(documentoValor1);
-    val2 = Number(documentoValor2);
+function result() {
+    const documentoValor1 = document.getElementById("valor1").value;
+    const operationInput = document.getElementById("oper").value;
+    const documentoValor2 = document.getElementById("valor2").value;
 
-    var resultado = resta(val1, val2);
-    console.log(resultado);
+    const val1 = Number(documentoValor1);
+    const val2 = Number(documentoValor2);
+    let resultado = 0;
 
-    document.getElementById("result").textContent += resultado;
+    if(operationInput === '+') {
+        resultado = suma(val1, val2);
+    } else if(operationInput === '-'){
+        resultado = resta(val1, val2);
+    }
+
+    document.getElementById("result").textContent = resultado;
 
 }
 
@@ -28,4 +30,9 @@ function suma(value1, value2) {
 
 function resta(value1, value2) {
     return value1 - value2;
+}
+
+function operation(oper) {
+    let caja = document.getElementById("oper");
+    caja.value=oper;
 }
