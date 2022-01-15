@@ -1,0 +1,63 @@
+/*body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+#main {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+#menu-principal {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+#menu-principal li {
+    color: white;
+    margin: 0 10px 0 0;
+} 
+#main-content {
+    display: flex;
+}
+#main-content ul {
+    list-style: none;
+    width: 60px;
+}
+#main-content div {
+    margin-left: 20px;;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.contenido {
+    background-color: white;
+}
+h1 {
+    color: rgba(0, 0, 0, 0.3);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+p {
+    color: yellow;
+}
+#my-id {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}*/
+.custom-border {
+    width: 100px;
+    height: 100px;
+}
